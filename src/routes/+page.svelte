@@ -1,7 +1,5 @@
 <script>
 	import '../app.css';
-
-	const test = 'test';
 </script>
 
 <main>
