@@ -2,18 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-  background-color: #7F5283;
+html {
+	background-color: #7f5283;
 }
 
 h1 {
-  font-family: Questrial;
+	font-family: Questrial;
 }
 
 a {
-  font-family: Questrial;
+	font-family: Questrial;
 }
 
 p {
-  font-family: Questrial;
+	font-family: Questrial;
+}
+
+@layer components {
+	.text-md {
+		@apply text-light;
+		@apply text-2xl;
+		@apply text-left;
+	}
 }
