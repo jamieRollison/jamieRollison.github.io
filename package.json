@@ -12,7 +12,8 @@
 		"test:unit": "vitest",
 		"lint-check": "eslint . --max-warnings=0",
 		"format-check": "prettier --plugin-search-dir . --check .",
-		"style": "prettier --plugin-search-dir . --write . && eslint ."
+		"style": "prettier --plugin-search-dir . --write . && eslint .",
+		"deploy": "npm run build && gh-pages -d build -b deploy"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
@@ -24,6 +25,7 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"gh-pages": "^5.0.0",
 		"postcss": "^8.4.21",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
